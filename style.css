@@ -1,0 +1,166 @@
+/* عام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* استخدام خط Poppins العصري */
+}
+
+/* الجسم */
+body {
+    background: #0D0D0D; /* خلفية داكنة جداً (أسود عميق) */
+    color: #D1D1D1; /* لون النص داكن مع لمسة من الفضي */
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* ترويسة */
+.header {
+    text-align: center;
+    color: #FFD700; /* الحفاظ على اللون الأصفر الفاتح */
+    margin-top: 50px;
+    animation: fadeIn 2s ease-out;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 600; /* زيادة وزن النص */
+    letter-spacing: 3px;
+}
+
+.header h2 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif; /* استخدام Playfair Display للعناوين */
+    font-style: italic;
+    color: #A9A9A9; /* لمسة من اللون الفضي الفاتح */
+}
+
+/* محتوى */
+.content {
+    margin: 40px auto;
+    max-width: 1100px;
+    padding: 30px;
+    background: #1A1A1A; /* خلفية داكنة للمحتوى */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    color: #FFD700; /* الحفاظ على اللون الأصفر الفاتح */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+/* معلومات الاتصال */
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #D1D1D1; /* استخدام الفضي الداكن للنصوص */
+}
+
+/* المهارات */
+.skills span {
+    display: inline-block;
+    background: #3A3A3A; /* خلفية داكنة مع لمسة من الرمادي */
+    color: #FFD700; /* الحفاظ على اللون الأصفر */
+    margin: 7px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.skills span:hover {
+    background: #FFD700; /* تأثير hover للحفاظ على اللون الأصفر */
+    color: #0D0D0D; /* تغيير اللون النصي إلى اللون الداكن */
+    transform: scale(1.1);
+}
+
+/* الشهادات */
+.certificate {
+    background: #2B2B2B; /* خلفية غامقة جداً مع الظلال */
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 2s ease-out;
+}
+
+.certificate h5 {
+    color: #FFD700; /* الحفاظ على اللون الأصفر */
+    font-size: 1.3rem;
+}
+
+.certificate a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.certificate a:hover {
+    color: #A9A9A9; /* تغيير اللون عند التمرير */
+}
+
+.certificate embed {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* اللغات */
+.languages {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #FFD700; /* الحفاظ على اللون الأصفر */
+}
+
+.languages div {
+    background: #3A3A3A; /* خلفية داكنة مع تأثير */
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    width: 28%;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: background 0.8s ease;
+}
+
+.languages div:hover {
+    background: #FFD700; /* تأثير hover للغات */
+    color: #0D0D0D;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+/* تذييل */
+.footer {
+    text-align: center;
+    margin-top: 70px;
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* التأثيرات المتحركة */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
